@@ -1,8 +1,6 @@
 HELP.md
-target/
+/target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
 ### STS ###
 .apt_generated
@@ -13,7 +11,7 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
+### IntelliJ IDEA ###cd wor
 .idea
 *.iws
 *.iml
@@ -25,9 +23,46 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+/build/
 
 ### VS Code ###
 .vscode/
+
+
+###  binaries
+**/bin/
+**/target/
+
+!**/src/**/target/
+!**/src/**/bin/
+!**/src/**/workspace/
+
+**/workspace/
+**/.svn
+
+### mvn polyglot
+**/.polyglot.build.properties
+
+
+### eclipse workspace
+**/.metadata
+**/.project
+**/.classpath
+
+
+### logs
+**/*.log
+**/*.log.*
+
+### sqlite
+*.sqlite
+
+.recommenders/
+
+
+**/var/
+!**/src/**/var/
+
+
+### flattened poms
+**/.flattened-pom.xml
