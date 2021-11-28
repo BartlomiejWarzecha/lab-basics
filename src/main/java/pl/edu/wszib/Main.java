@@ -1,10 +1,9 @@
 package pl.edu.wszib;
 
 import java.math.BigInteger;
+import jdk.swing.interop.DragSourceContextWrapper;
 
 public class Main {
-
-
   public static void main(String[] args) {
 
       byte b = 1;
@@ -21,5 +20,21 @@ public class Main {
       BigInteger sum = first.add(second);
 
       System.out.println(sum);
+
+      Punkt punkt =  new Punkt(10,100);
+
+      System.out.println("Punkt x: " + punkt.x + "\n" + "Punkt y: " + punkt.y);
+
+      System.out.println("Changing directions of each value by 10 \n");
+      punkt.zmienPolozenieX(10);
+
+      punkt.zmienPolozenieY(10);
+      punkt.zmienPolozenieZ(10);
+
+      System.out.println("Punkt x: " + punkt.x + "\n" + "Punkt y: " + punkt.y
+      + "\n" +  "Nowy punkt z: " + punkt.z);
+
+
+
   }
 }
