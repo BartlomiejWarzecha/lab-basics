@@ -9,11 +9,15 @@ import jdk.swing.interop.DragSourceContextWrapper;
 
 public class Main {
   public static void main(String[] args) {
-
+    /*
+        Set vs List
+        Find distinct names from given list
+        List is ending after = is given to input stream
+    */
         String imie = "imie";
         Integer k = 0;
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new  Scanner(System.in);
         List arrayList = new ArrayList();
 
     while (true){
