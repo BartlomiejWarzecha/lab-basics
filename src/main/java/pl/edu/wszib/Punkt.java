@@ -7,7 +7,6 @@ public class Punkt {
   protected int y;
   protected int z;
 
-
    public Punkt(int x, int y){
 
       this.x = x;

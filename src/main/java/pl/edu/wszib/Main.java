@@ -1,40 +1,37 @@
 package pl.edu.wszib;
 
 import java.math.BigInteger;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.Scanner;
 import jdk.swing.interop.DragSourceContextWrapper;
 
 public class Main {
   public static void main(String[] args) {
 
-      byte b = 1;
-      short s = 1;
-      int i = 1;
-      long l = 1L;
-      float f = 1f;
+        String imie = "imie";
+        Integer k = 0;
 
-      int i_too_long = 2147483646;
+        Scanner scanner = new Scanner(System.in);
+        List arrayList = new ArrayList();
 
-      BigInteger first = BigInteger.valueOf(129310231023L);
-      BigInteger second = BigInteger.TEN;
+    while (true){
 
-      BigInteger sum = first.add(second);
+      System.out.println("Give all names you know, dont try to cheat!(write = to end)");
 
-      System.out.println(sum);
+      imie = scanner.next();
+      arrayList.add(imie);
+      System.out.println(arrayList.get(k));
 
-      Punkt punkt =  new Punkt(10,100);
+      if (arrayList.get(k) == "=" ){
+        break;
+      }
+      k++;
+    }
 
-      System.out.println("Punkt x: " + punkt.x + "\n" + "Punkt y: " + punkt.y);
-
-      System.out.println("Changing directions of each value by 10 \n");
-      punkt.zmienPolozenieX(10);
-
-      punkt.zmienPolozenieY(10);
-      punkt.zmienPolozenieZ(10);
-
-      System.out.println("Punkt x: " + punkt.x + "\n" + "Punkt y: " + punkt.y
-      + "\n" +  "Nowy punkt z: " + punkt.z);
-
-
-
+        for(int i=0;i<arrayList.size();i++){
+            System.out.println(arrayList.get(i));
+        }
   }
 }
